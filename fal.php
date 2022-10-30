@@ -3,7 +3,7 @@
 //my channel : @power_pg
 //falgir source v1.0 @ElenLiLCO
 //v2coming soon...
-define('API_KEY', '5637709917:AAF2Jgf0RG5K8FPtkHFPcvnZW8CRvpNfBZI'); //توکن را ست کنید
+define('API_KEY', 'token'); //توکن را ست کنید
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
