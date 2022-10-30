@@ -83,10 +83,10 @@ $music = $update->message->audio;
 $voice = $update->message->voice;
 $forward = $update->message->forward_from;
 $textmessage = isset($update->message->text)?$update->message->text:'';
-$ADMIN = 102689256;//آیدی خودتون رو ست کنید
-$idbot = falgirpw_bot; //آیدی رباتتون رو ست کنید
-$API_KEY = '556098741:AAG6mU4a8b7k3cmnKCDFbUK-V3M5e-C3HV0';//توکن خود را ست کنید
-$forchaneel = json_decode(file_get_contents("https://api.telegram.org/bot$API_KEY/getChatMember?chat_id=@power_pg&user_id=".$from_id)); // ایدی کانالتون رو ست کنید
+$ADMIN = 1203688744;//آیدی خودتون رو ست کنید
+$idbot = FalemooNBoT; //آیدی رباتتون رو ست کنید
+$API_KEY = '5637709917:AAF2Jgf0RG5K8FPtkHFPcvnZW8CRvpNfBZI';//توکن خود را ست کنید
+$forchaneel = json_decode(file_get_contents("https://api.telegram.org/bot$API_KEY/getChatMember?chat_id=@LoG_BaX&user_id=".$from_id)); // ایدی کانالتون رو ست کنید
 $tch = $forchaneel->result->status;
 $type = $update->message->chat->type;
 $get = file_get_contents("https://api.telegram.org/bot$API_KEY/getChatMember?chat_id=$chat_id&user_id=".$from_id);
@@ -108,7 +108,7 @@ if($tch != 'member' && $tch != 'creator' && $tch != 'administrator'){
   bot('sendMessage',[
     'chat_id'=>$chat_id,
     'text'=>"برای فعال شدن ربات ابتدا باید در کانال ما عضو شوید
-    @power_pg
+    @LoG_BaX
     سپس به ربات برگشته و دستور 
     /start
     را بزنید"]);
@@ -146,7 +146,7 @@ bot('sendMessage',[
       'reply_markup'=>json_encode([
 'inline_keyboard'=>[
 [
-['text'=>"سازنده",'url'=>"https://t.me/amirhossein_nb"],['text'=>"کانال ما",'url'=>"http://t.me/power_PG"]
+['text'=>"سازنده",'url'=>"https://t.me/ElenLiL"],['text'=>"کانال ما",'url'=>"http://t.me/LoG_BaX"]
 ],
 [
 ['text'=>"درباره ربات",'callback_data'=>"a"]
@@ -166,7 +166,7 @@ bot('editmessagetext',[
 
 با این ربات میتوانید به راحتی فال بگیرید و از امکانات فان پیشگویی در اون استفاده کنید.
 
-قدرت گرفته از : @power_pg",
+قدرت گرفته از : @ElenLiLBoT",
  'reply_markup'=>json_encode([
      'inline_keyboard'=>[
          [['text'=>"بازگشت",'callback_data'=>"back"]],
@@ -181,7 +181,7 @@ bot('editmessagetext',[
  'text'=>"به منوی قبل بازگشتید",
  'reply_markup'=>json_encode([
      'inline_keyboard'=>[
-[['text'=>"سازنده",'url'=>"https://t.me/amirhossein_nb"],['text'=>"کانال ما",'url'=>"http://t.me/power_PG"]],
+[['text'=>"سازنده",'url'=>"https://t.me/ElenLiL"],['text'=>"کانال ما",'url'=>"http://t.me/LoG_BaX"]],
 [['text'=>"درباره ربات",'callback_data'=>"a"]],
 ],
 ])
@@ -197,7 +197,7 @@ elseif ($text == "دیگر ربات ها"){
 [['text'=>"🤔یوزر اینفو🤔",'url'=>"https://telegram.me/userinfopw_bot"]],
 [['text'=>"🤔تا نوروز چقدر مونده🤔",'url'=>"https://t.me/norozpw_bot"]],
 [['text'=>"آنتی اسپم رایگان",'url'=>"https://t.me/antispampw_bot"]],
-[['text'=>"کانال ما",'url'=>"https://t.me/power_pg"]],
+[['text'=>"کانال ما",'url'=>"https://t.me/LoG_BaX"]],
 ]
 ])
  ]);
