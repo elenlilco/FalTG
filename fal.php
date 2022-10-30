@@ -84,7 +84,7 @@ $voice = $update->message->voice;
 $forward = $update->message->forward_from;
 $textmessage = isset($update->message->text)?$update->message->text:'';
 $ADMIN = 1203688744;//آیدی خودتون رو ست کنید
-$idbot = FalemooNBoT; //آیدی رباتتون رو ست کنید
+$idbot = falemoonbot; //آیدی رباتتون رو ست کنید
 $API_KEY = '5637709917:AAF2Jgf0RG5K8FPtkHFPcvnZW8CRvpNfBZI';//توکن خود را ست کنید
 $forchaneel = json_decode(file_get_contents("https://api.telegram.org/bot$API_KEY/getChatMember?chat_id=@LoG_BaX&user_id=".$from_id)); // ایدی کانالتون رو ست کنید
 $tch = $forchaneel->result->status;
