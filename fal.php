@@ -1,9 +1,9 @@
 <?php 
 //programmer : @amirhossein_nb
 //my channel : @power_pg
-//falgir source v1.0 @falgirpw_bot
+//falgir source v1.0 @ElenLiLCO
 //v2coming soon...
-define('API_KEY', 'token'); //توکن را ست کنید
+define('API_KEY', '5637709917:AAF2Jgf0RG5K8FPtkHFPcvnZW8CRvpNfBZI'); //توکن را ست کنید
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
@@ -125,7 +125,7 @@ sendaction($chat_id,'typing');
 bot('sendMessage',[
     'chat_id'=>$chat_id,
     'text'=>"سلام $firstname عزیز به ربات پیشگو تیم
-    @power_Pg
+    @ElenLiL
     خوش آمدید
     برای استفاده از ربات از کیبورد زیر استفاده کنید!",
     'reply_markup'=>json_encode([
